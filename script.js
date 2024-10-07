@@ -102,3 +102,4 @@ time.changeHours(1)
 time.changeMinutes(1)
 time.changeSeconds(1)
 console.log(time.hours, time.minutes, time.seconds)
+
