@@ -62,6 +62,7 @@ let time = {
     let updatedHours = time.hours + addedHours
     if (updatedHours > 24) {
       time.hours = updatedHours - 24
+      time.hours %= 24
     } else { time.hours = updatedHours }
   },
 
@@ -98,8 +99,8 @@ let time = {
   },
 }
 
-time.changeHours(1)
-time.changeMinutes(1)
-time.changeSeconds(1)
+time.changeHours(0)
+time.changeMinutes(61)
+time.changeSeconds(0)
 console.log(time.hours, time.minutes, time.seconds)
 
